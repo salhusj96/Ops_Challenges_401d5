@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 # Script: Ops 401d5 Ops Challenge Solution 
 # Author: Jon Salhus                  
@@ -9,4 +9,21 @@ import datetime
 import time
 import os
 
+def check_ping():
+    hostname = "8.8.8.8"
+    response = os.system("ping -c 1 " + hostname)
+    if response == 0:
+        pingstatus = "PING OK"
+    else:
+        pingstatus = "PING ERROR"
+    return pingstatus
+
+pingstatus = check_ping()
+
+while True:
+    print("Start: %s" % time.ctime())
+    check_ping()
+    print(pingstatus)
+    time.sleep(3)
+    print("End: %s" % time.ctime())
 
