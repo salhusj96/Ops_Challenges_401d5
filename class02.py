@@ -2,7 +2,7 @@
 
 # Script: Ops 401d5 Ops Challenge Solution 
 # Author: Jon Salhus                  
-# Date of latest revision: 10/4/2022  
+# Date of latest revision: 10/5/2022  
 # Purpose: creates an uptime sensor tool that uses ICMP packets to evaluate if hosts on the LAN are up or down.
 # Source: https://stackoverflow.com/questions/26468640/python-function-to-test-ping
 
