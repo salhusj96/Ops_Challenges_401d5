@@ -49,6 +49,7 @@ if choice == 1:
         with open(filepath, 'wb') as encrypted_file:
             encrypted_file.write(encrypted)
     enc_file()
+    menu()
 elif choice == 2:
     def dec_file():
         filepath = input("Please enter the filepath of the file you wish to decrypt: ")
@@ -58,6 +59,7 @@ elif choice == 2:
         with open(filepath, 'wb') as decrypted_file:
             decrypted_file.write(decrypted)
     dec_file()
+    menu()
 elif choice == 3:
     def enc_str():
         message = input("Please enter some plain text: ").encode()
@@ -65,6 +67,7 @@ elif choice == 3:
         encrypted = f.encrypt(message)
         print("Ciphertext is: " + str(encrypted.decode('utf-8')))
     enc_str()
+    menu()
 elif choice == 4:
     def dec_str():
         message = input("Please enter ciphertext: ").encode()
@@ -72,5 +75,6 @@ elif choice == 4:
         decrypted = f.decrypt(message)
         print("Plaintext is: " + str(decrypted.decode('utf-8')))
     dec_str()
+    menu()
 elif choice == 5:
     print("Exiting script.")
