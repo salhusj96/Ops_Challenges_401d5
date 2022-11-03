@@ -2,7 +2,7 @@
 
 # Script: Ops 401d5 Protech-Xealth Bruteforcer
 # Author: Jon Salhus                  
-# Date of latest revision: 11/2/2022
+# Date of latest revision: 11/3/2022
 # Purpose: SSH Brute Force Attacker
 
 import paramiko
