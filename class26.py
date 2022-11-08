@@ -44,7 +44,7 @@ def brute(password):
     for password in f:
         brute(password.rstrip())
 
-# MAIN
+# MAIN FOR LOGS
 logging.basicConfig(filename='./testlog.log', level=logging.ERROR, format='%(asctime)s:%(levelname)s:%(message)s')
 print('Logging initialized.')
 logging.debug('Get rid of the bugs!')
