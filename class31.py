@@ -12,22 +12,14 @@ import os, time
 # Functions
 # Linux
 def linSearch():
-    # ask user for path
-
-    # ask user for filename
-
-    # count num of files searched, stored in var
-
-    # count num of files found, stored in var
-
-    # print vars
+    prompt_file = input("Provide a target file path:\n")
+    prompt_dir = input("Provide a target directory path:\n")
+    for root, dir, files in os.walk(prompt_dir):
+        if prompt_file in files:
 
 
 # Windows
 def winSearch():
-    # ask user for path
-
-    # ask user for filename
 
 # Determine OS and run appropriate function
 if platform == "linux" or "platform" == "linux2":
