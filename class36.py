@@ -9,23 +9,21 @@ import socket
 import time
 import subprocess
 
+a = input("Type in the URL or IP address you want to fingerprint:\n")
+p = input("Type the port you would like to check:\n")
+
 # net cat function
 def netcat(a, p):
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.connect((a, int(p)))
-
+    sock.connect((a, int(p))) 
     run = "nc" + a + " " + p
     sock.sendall(run.encode())
-
-
     # While Loop
     while True:
         data = sock.recv(1024)
         if (not data):
             break
         res += data.decode()
-
     print(res)
-
     sock.close()
