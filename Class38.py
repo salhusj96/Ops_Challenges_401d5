@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 # Script: Ops 401d5 Ops Challenge Solution 38
-# Author: Jon Salhus                  
+# Author: Abdou Rockikz, Jon Salhus                  
 # Date of latest revision: 12/16/2022
 # Purpose: XSS Vulnerability Script, Web Security Dojo
 
